@@ -1,5 +1,5 @@
 import { createSSRApp, h } from 'vue'
-import PageShell from './PageShell.vue'
+import Pokemon from './Pokemon.vue'
 import { setPageContext } from './usePageContext'
 
 export { createApp }
@@ -9,7 +9,7 @@ function createApp(pageContext) {
   const PageWithLayout = {
     render() {
       return h(
-        PageShell,
+        Pokemon,
         {},
         {
           default() {

@@ -1,0 +1,87 @@
+{
+  "renderer/_default.page.client.js": {
+    "file": "assets/renderer\\_default.page.client.js.4d5c8edf.js",
+    "src": "renderer/_default.page.client.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "renderer/_error.page.vue",
+      "pages/about/index.page.vue",
+      "pages/index/index.page.vue",
+      "renderer/_default.page.server.js",
+      "components/LikeButton.vue",
+      "components/PokemonSearch.vue",
+      "components/PokemonList.vue"
+    ],
+    "css": [
+      "assets/renderer\\_default.page.client.js.d3877ceb.css"
+    ],
+    "assets": [
+      "assets/no-result.065a2327.png"
+    ]
+  },
+  "renderer/_error.page.vue": {
+    "file": "assets/_error.page.7b40aea0.js",
+    "src": "renderer/_error.page.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ]
+  },
+  "pages/about/index.page.vue": {
+    "file": "assets/index.page.6fef6c8e.js",
+    "src": "pages/about/index.page.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ],
+    "css": [
+      "assets/index.page.de42b54a.css"
+    ]
+  },
+  "pages/index/index.page.vue": {
+    "file": "assets/index.page.d9d3c1bb.js",
+    "src": "pages/index/index.page.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ]
+  },
+  "renderer/_default.page.server.js": {
+    "file": "assets/_default.page.server.11dfcb15.js",
+    "src": "renderer/_default.page.server.js",
+    "isDynamicEntry": true
+  },
+  "components/PokemonSearch.vue": {
+    "file": "assets/PokemonSearch.60be94c2.js",
+    "src": "components/PokemonSearch.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ]
+  },
+  "components/PokemonList.vue": {
+    "file": "assets/PokemonList.c77af3b2.js",
+    "src": "components/PokemonList.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ],
+    "dynamicImports": [
+      "components/LikeButton.vue"
+    ],
+    "css": [
+      "assets/PokemonList.c7bd5fb8.css"
+    ]
+  },
+  "components/LikeButton.vue": {
+    "file": "assets/LikeButton.34a41830.js",
+    "src": "components/LikeButton.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "renderer/_default.page.client.js"
+    ],
+    "css": [
+      "assets/LikeButton.c0bd1606.css"
+    ]
+  }
+}
