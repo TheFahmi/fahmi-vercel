@@ -107,7 +107,69 @@ export default {
         .catch((error) => {
           console.log(error)
         })
-    } 
+    }
+    
+    const head = computed(() => ({
+      title: "sabar ",
+      meta: [
+        {
+          hid: "increment",
+          name: "increment",
+          content: `${inc.value}`,
+        },
+        {
+          hid: "title",
+          name: "title",
+          content: "INI TITLE"
+        {
+          hid: "description",
+          name: "description",
+          content: "INI DESKRIPSI",
+        },
+        // Open Graph
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "website",
+        },
+        { hid: "og:title", property: "og:title", content: "INI TITLE" },
+        {
+          hid: "og:image",
+          content: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: "INI DESKRIPSI",
+        },
+        // Twitter Card
+        {
+          hid: "twitter:title",
+          property: "twitter:title",
+          content: "INI TITLE",
+        },
+        {
+          hid: "twitter:image",
+          property: "twitter:image",
+          content: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        },
+        {
+          hid: "twitter:description",
+          property: "twitter:description",
+          content: "INI DESKRIPSI",
+        },
+        {
+          hid: "twitter:card",
+          property: "twitter:card",
+          content: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        },
+        {
+          hid: "twitter:url",
+          property: "twitter:url",
+          content: "summary_large_image",
+        },
+      ],
+    }));
 
     const convertIsLike = () => {
       const likeStorage = JSON.parse(localStorage.getItem('likeStorage'))
