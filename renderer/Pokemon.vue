@@ -80,6 +80,24 @@ import Loading from '../components/Loading.vue'
 import PokemonDetail from '../components/PokemonDetail.vue'
 import PokemonFavorite from '../components/PokemonFavorite.vue'
 
+export { onBeforeRender }
+
+function onBeforeRender(pageContext) {
+  const documentProps = (() => {
+    return {
+      title: 'Starship',
+      description: 'Starship: deliver payload to Mars'
+    }
+    
+  })()
+
+  return {
+    pageContext: {
+      documentProps
+    }
+  }
+}
+
 
 const AsyncPokemonSearch = defineAsyncComponent({
     loader: () => import("../components/PokemonSearch.vue"),
